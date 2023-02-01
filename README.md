@@ -45,13 +45,13 @@ In addition I decided that's it's too boring to pick up some well known versions
 * Application requires Git and [.NET SDK 7](https://dotnet.microsoft.com/en-us/download):
 ```bash
 git clone https://github.com/nuCleaRR/Itsp-home-assessment.git
-cd Itsp-home-assessment\Api
+cd Itsp-home-assessment/Api
 dotnet run
 open "http://localhost:5025/swagger/index.html"
 ```
 * To run tests
 ```bash
-cd ..\Api.IntegrationTests
+cd ../Api.IntegrationTests
 dotnet test
 ```
 
