@@ -65,7 +65,7 @@ builder.Services.AddAuthorizationBuilder()
             .RequireRole("admin"))
     .AddPolicy("user_policy", policy =>
         policy
-            .RequireRole("user"));
+            .RequireRole("user", "admin"));
 
 var loggerConfiguration = new LoggerConfiguration()
     .WriteTo.Console();
@@ -118,7 +118,7 @@ app.MapPut("/users/", ApiEndpoints.UpdateUser)
     .Produces(StatusCodes.Status401Unauthorized);
 
 app.MapGet("/movies", ApiEndpoints.SearchMovieAsync)
-    .RequireAuthorization("user_policy", "admin_policy")
+    .RequireAuthorization("user_policy")
     .Produces(StatusCodes.Status200OK)
     .Produces(StatusCodes.Status401Unauthorized)
     .WithOpenApi(operation =>

@@ -56,7 +56,7 @@ dotnet test
 ```
 
 ### How to authorize
-All endpoints require authorization. There are two roles: admin and user. Admin has an access to `get-all` endpoints, user has access to the rest of endpoints.
+All endpoints require authorization. There are two roles: admin and user. Admin has an access to all endpoints, user is forbidden to call `get-all` endpoints;
 
 For authorization a new `dotnet user-jwts` command line tool should be used.
 
