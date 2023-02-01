@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>Itsp_home_assessment.Api</RootNamespace>
+        <UserSecretsId>882022a9-dbb9-4eeb-820f-02b84d41d84b</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.2" />
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.2" />
+        <PackageReference Include="Serilog.AspNetCore" Version="6.1.1-dev-00293" />
+        <PackageReference Include="Serilog.Sinks.ApplicationInsights" Version="4.0.1-dev-00040" />
+        <PackageReference Include="Serilog.Sinks.Console" Version="4.1.1-dev-00901" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Database\Database.csproj" />
+      <ProjectReference Include="..\Services\Services.csproj" />
+    </ItemGroup>
+
+</Project>
