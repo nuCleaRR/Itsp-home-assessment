@@ -40,6 +40,7 @@ In addition I decided that's it's too boring to pick up some well known versions
 * Integration tests are running on real API
 * Swagger is up and running
 * Simple authentication/authorization using Bearer token
+* Any single cpu cycle of ChatGPT was not harm :)
 
 ## How to run
 * Application requires Git and [.NET SDK 7](https://dotnet.microsoft.com/en-us/download):
@@ -87,7 +88,7 @@ curl -i -H "Authorization: Bearer {token}" http://localhost:5025/users/get-all
 ```
 
 ### What I didn't like much aka. points to improve
-* Folder structure can be better. I didn't want apply some exiting patterns and tried to follow KISS principle, specially having MinimalAPI approach. But still habits forced me to create some familiar layers.
+* Folder structure can be better. I didn't want apply some existing patterns and tried to follow KISS principle, specially having MinimalAPI approach. But still habits forced me to create some familiar layers.
 * No CRUD operations on controllers, just omit them for simplicity sake.
 * Authorization is very basic. Obviously, hard coding bearer tokens in tests is a bad approach and need to establish automatic token retrieval using user-jwts or any other approach.
 * Tests far away from comprehensive coverage and can be further improved by collapsing similar tests with Theory + MemberData approach.
