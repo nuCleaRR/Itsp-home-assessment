@@ -93,4 +93,5 @@ curl -i -H "Authorization: Bearer {token}" http://localhost:5025/users/get-all
 * Authorization is very basic. Obviously, hard coding bearer tokens in tests is a bad approach and need to establish automatic token retrieval using user-jwts or any other approach.
 * Tests far away from comprehensive coverage and can be further improved by collapsing similar tests with Theory + MemberData approach.
 * Versioning is must have, but there are a lot of dancing with Swagger, so I skipped that
+* I forgot to implement DTO approach
 * Lack of completed bonus tasks.
